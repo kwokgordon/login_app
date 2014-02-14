@@ -1,4 +1,6 @@
 LoginApp::Application.routes.draw do
+  get 'stayawake' => 'stayawake#index'
+
   devise_for :users
 
   devise_scope :user do
